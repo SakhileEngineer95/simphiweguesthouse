@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="output.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <title>Simphiwe Guest House</title>
+    </head>
+    <body class="scrollbar-hidden overflow-auto">
+        <!--Navbar-->
+        <nav class="bg-white shadow-md sticky top-0 z-10">
+            <div class="max-w-7xl mx-auto px-4 py-4">
+                <div class="flex justify-between items-center  ">
+                    <!--Logo-->
+                    <div class="mr-4">
+                        <a href="#about">
+                            <img src="/img/logo.JPG" alt="Logo" class="h-10 ">
+                        </a>
+                    </div>
+                    <!--hamburger icon-->
+                    <div class="md:hidden hamburger w-6 h-6" id="hamburger">
+                        <img src="img//more.png" alt="hamburger">
+                    </div>
+                    <!--Navigation links-->
+                    <div class="hidden md:flex space-x-4" id="nav-links">
+                        <a href="#about" class="text-gray-700 hover:text-orange-400 font-roboto">Home</a>
+                        <a href="#about" class="text-gray-700 hover:text-orange-400 font-roboto">About</a>
+                        <a href="#services" class="text-gray-700 hover:text-orange-400 font-roboto ">Services</a>
+                        <a href="#contact" class="text-gray-700 hover:text-orange-400 font-roboto ">Contacts</a>
+                    </div>
+                </div>
+            </div>
+            <!--Collapsable menu for mobile-->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-2 px-4 py-2 items-end">
+                    <a href="#about" class="text-gray-700 hover:text-orange-400 font-roboto">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-orange-400 font-roboto">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-orange-400 font-roboto">Services</a>
+                    <a href="#contact" class="text-gray-700 hover:text-orange-400 font-roboto">Contacts</a>
+                </div>
+            </div>
+        </nav>
+        <!--Content-->
+        <!-- About Section -->
+        <section id="about" class="bg-gray-100 py-12 px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-roboto font-bold text-gray-800 text-center mb-6">About Simphiwe Guest House</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <!-- About Image -->
+                    <div>
+                        <img src="/img/main_view.jpg" alt="Simphiwe Guest House" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <!-- About Text -->
+                    <div>
+                        <p class="text-gray-600 font-roboto leading-relaxed mb-4">
+                            Welcome to Simphiwe Guest House, a serene oasis where comfort meets elegance. Nestled in the heart of tranquility, 
+                            our guest house offers a perfect retreat for travelers seeking relaxation and exceptional service. 
+                        </p>
+                        <p class="text-gray-600 font-roboto leading-relaxed">
+                            Whether you're here for business or leisure, we take pride in providing a home away from home. 
+                            With our luxurious amenities and personalized hospitality, we ensure that your stay is truly unforgettable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section id="services" class="bg-white py-12 px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-roboto font-bold text-gray-800 text-center mb-6">Our Amenities</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1: Accommodation -->
+                    <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md">
+                        <img src="/img/queen_bed.png" alt="Accommodation Icon" class="w-16 h-16 mb-4">
+                        <h3 class="text-xl font-roboto font-semibold text-gray-800 mb-2">Comfortable Accommodation</h3>
+                        <p class="text-gray-600 font-roboto leading-relaxed">
+                            Experience the comfort of our spacious, tastefully decorated rooms designed for relaxation and serenity.
+                        </p>
+                    </div>
+        
+                    <!-- Service 2: Garden View -->
+                    <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md">
+                        <img src="/img/landscape.png" alt="Garden View Icon" class="w-16 h-16 mb-4">
+                        <h3 class="text-xl font-roboto font-semibold text-gray-800 mb-2">Stunning Garden Views</h3>
+                        <p class="text-gray-600 font-roboto leading-relaxed">
+                            Unwind in our beautiful gardens, where you can enjoy nature and breathtaking views from your window.
+                        </p>
+                    </div>
+        
+                    <!-- Service 3: Fast WiFi -->
+                    <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md">
+                        <img src="/img/wifi.png" alt="WiFi Icon" class="w-16 h-16 mb-4">
+                        <h3 class="text-xl font-roboto font-semibold text-gray-800 mb-2">Fast WiFi - 54 Mbps</h3>
+                        <p class="text-gray-600 font-roboto leading-relaxed">
+                            Stay connected with high-speed internet throughout the property, perfect for work or leisure.
+                        </p>
+                    </div>
+        
+                    <!-- Service 4: Dedicated Workspace -->
+                    <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md">
+                        <img src="/img/workspace.png" alt="Workspace Icon" class="w-16 h-16 mb-4">
+                        <h3 class="text-xl font-roboto font-semibold text-gray-800 mb-2">Dedicated Workspace</h3>
+                        <p class="text-gray-600 font-roboto leading-relaxed">
+                            Enjoy a quiet and productive environment with a dedicated workspace in every room.
+                        </p>
+                    </div>
+        
+                    <!-- Service 5: Free Parking -->
+                    <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md">
+                        <img src="/img/parked_car.png" alt="Parking Icon" class="w-16 h-16 mb-4">
+                        <h3 class="text-xl font-roboto font-semibold text-gray-800 mb-2">Free Parking on Premises</h3>
+                        <p class="text-gray-600 font-roboto leading-relaxed">
+                            Convenient and secure parking available at no extra cost for all our guests.
+                        </p>
+                    </div>
+        
+                    <!-- Service 6: Security Cameras -->
+                    <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-md">
+                        <img src="/img/security_camera.png" alt="Security Icon" class="w-16 h-16 mb-4">
+                        <h3 class="text-xl font-roboto font-semibold text-gray-800 mb-2">Exterior Security Cameras</h3>
+                        <p class="text-gray-600 font-roboto leading-relaxed">
+                            Your safety is our priority. We ensure a secure environment with exterior security cameras around the property.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Cancellation Policy Section -->
+        <section id="cancellation-policy" class="bg-gray-50 py-12 px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">Cancellation Policy</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <p class="text-gray-600 font-roboto leading-relaxed">
+                        Free cancellation before <strong>Oct 31</strong>. Cancel before check-in on <strong>Nov 1</strong> for a partial refund. 
+                        Review this host's full policy for details.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- House Rules Section -->
+        <section id="house-rules" class="bg-white py-12 px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-roboto font-bold text-gray-800 text-center mb-6">House Rules</h2>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                    <ul class="text-gray-600 font-roboto space-y-4">
+                        <li><strong>Check-in:</strong> 2:00 PM - 8:00 PM</li>
+                        <li><strong>Check-out:</strong> Before 10:00 AM</li>
+                        <li><strong>Guests:</strong> Maximum of 2 guests</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Rooms Section -->
+        <section id="rooms" class="bg-gray-100 py-12 px-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl font-roboto font-bold text-gray-800 text-center mb-6">Our Rooms</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Room 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="/img/acc1.jpg" alt="Luxury Room" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-roboto font-semibold text-gray-800 mb-2">Luxury Room</h3>
+                            <p class="text-gray-600 font-roboto leading-relaxed">
+                                Enjoy the ultimate comfort in our luxury room featuring a king-size bed, en-suite bathroom, and modern amenities.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Room 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="/img/garden_view.jpg" alt="Garden View Room" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-roboto font-semibold text-gray-800 mb-2">Garden View Room</h3>
+                            <p class="text-gray-600 font-roboto leading-relaxed">
+                                A cozy room with stunning garden views, perfect for relaxation and rejuvenation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Room 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="/img/standard.jpg" alt="Standard Room" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-roboto font-semibold text-gray-800 mb-2">Standard Room</h3>
+                            <p class="text-gray-600 font-roboto leading-relaxed">
+                                A comfortable option for budget-conscious travelers, equipped with all essentials for a pleasant stay.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contacts Section / Footer -->
+        <footer id="contact" class="bg-gray-800 text-gray-100 py-12 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Contact Details -->
+                    <div>
+                        <h2 class="text-2xl font-roboto font-bold text-white mb-4">Contact Us</h2>
+                        <ul class="space-y-4 font-roboto">
+                            <li>
+                                <strong>Location:</strong> 1471 Kelly Street, Extension 5, Manzini, Eswatini
+                            </li>
+                            <li>
+                                <strong>Phone:</strong> <a href="tel:+26876655974" class="text-orange-400 hover:underline">+268 7665 5974</a>
+                            </li>
+                            <li>
+                                <strong>Website:</strong> <a href="https://simphiweguesthouse.com" target="_blank" class="text-orange-400 hover:underline">simphiweguesthouse.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div>
+                        <h2 class="text-2xl font-roboto font-bold text-white mb-4">Follow Us</h2>
+                        <div class="flex space-x-4">
+                            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                <img src="/img/facebook.png" alt="Facebook Icon" class="w-8 h-8">
+                            </a>
+                            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                <img src="/img/twitter.png" alt="Twitter Icon" class="w-8 h-8">
+                            </a>
+                            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                                <img src="/img/instagram.png" alt="Instagram Icon" class="w-8 h-8">
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                <img src="/img/web.png" alt="LinkedIn Icon" class="w-8 h-8">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="mt-8 text-center font-roboto border-t border-gray-700 pt-4">
+                    <p>&copy; 2024 Simphiwe Guest House. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>

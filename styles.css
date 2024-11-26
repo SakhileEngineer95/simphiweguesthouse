@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger {
+  cursor: pointer;
+}
+.scrollbar-hidden {
+  scrollbar-width: hidden;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+}
