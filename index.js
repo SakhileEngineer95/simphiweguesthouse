@@ -23,3 +23,23 @@ document.querySelectorAll('#nav-links a').forEach(link => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const aboutSection = document.getElementById('about');
+    const aboutText1 = document.getElementById('about-text-1');
+    const aboutText2 = document.getElementById('about-text-2');
+    const aboutImage = document.getElementById('about-image');
+
+    window.addEventListener('scroll', function() {
+        const sectionPosition = aboutSection.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        // Trigger fade-in animation when the About section comes into view
+        if (sectionPosition <= windowHeight * 0.75) {
+            aboutSection.classList.add('opacity-100');
+            aboutText1.classList.add('opacity-100');
+            aboutText2.classList.add('opacity-100');
+            aboutImage.classList.add('opacity-100');
+        }
+    });
+});

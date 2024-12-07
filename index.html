@@ -11,60 +11,82 @@
         <!--Navbar-->
         <nav class="bg-white shadow-md sticky top-0 z-10">
             <div class="max-w-7xl mx-auto px-4 py-4">
-                <div class="flex justify-between items-center  ">
-                    <!--Logo-->
+                <div class="flex justify-between items-center">
+                    <!-- Logo with animation -->
                     <div class="mr-4">
-                        <a href="#about">
-                            <img src="img/logo.JPG" alt="Logo" class="h-10 ">
+                        <a href="#about" class="transform transition duration-300 hover:scale-110">
+                            <img src="img/logo.JPG" alt="Logo" class="h-14">
                         </a>
                     </div>
-                    <!--hamburger icon-->
+                    <!-- Hamburger icon -->
                     <div class="md:hidden hamburger w-6 h-6" id="hamburger">
                         <img src="img/more.png" alt="hamburger">
                     </div>
-                    <!--Navigation links-->
+                    <!-- Navigation links with animations -->
                     <div class="hidden md:flex space-x-4" id="nav-links">
-                        <a href="#about" class="text-gray-700 hover:text-orange-400 font-roboto">Home</a>
-                        <a href="#about" class="text-gray-700 hover:text-orange-400 font-roboto">About</a>
-                        <a href="#services" class="text-gray-700 hover:text-orange-400 font-roboto ">Services</a>
-                        <a href="#contact" class="text-gray-700 hover:text-orange-400 font-roboto ">Contacts</a>
+                        <a href="#about" class="text-gray-700 hover:text-orange-400 font-roboto transform transition duration-300 hover:-translate-y-1">
+                            Home
+                        </a>
+                        <a href="#about" class="text-gray-700 hover:text-orange-400 font-roboto transform transition duration-300 hover:-translate-y-1">
+                            About
+                        </a>
+                        <a href="#services" class="text-gray-700 hover:text-orange-400 font-roboto transform transition duration-300 hover:-translate-y-1">
+                            Services
+                        </a>
+                        <a href="#contact" class="text-gray-700 hover:text-orange-400 font-roboto transform transition duration-300 hover:-translate-y-1">
+                            Contacts
+                        </a>
                     </div>
                 </div>
             </div>
-            <!--Collapsable menu for mobile-->
+            <!-- Collapsible menu for mobile -->
             <div class="md:hidden hidden" id="mobile-menu">
                 <div class="flex flex-col space-y-2 px-4 py-2 items-end">
-                    <a href="#about" class="text-gray-700 hover:text-orange-400 font-roboto">Home</a>
-                    <a href="#about" class="text-gray-700 hover:text-orange-400 font-roboto">About</a>
-                    <a href="#services" class="text-gray-700 hover:text-orange-400 font-roboto">Services</a>
-                    <a href="#contact" class="text-gray-700 hover:text-orange-400 font-roboto">Contacts</a>
+                    <a href="#about" class="text-gray-700 hover:text-orange-400 font-roboto transform transition duration-300 hover:translate-x-2">
+                        Home
+                    </a>
+                    <a href="#about" class="text-gray-700 hover:text-orange-400 font-roboto transform transition duration-300 hover:translate-x-2">
+                        About
+                    </a>
+                    <a href="#services" class="text-gray-700 hover:text-orange-400 font-roboto transform transition duration-300 hover:translate-x-2">
+                        Services
+                    </a>
+                    <a href="#contact" class="text-gray-700 hover:text-orange-400 font-roboto transform transition duration-300 hover:translate-x-2">
+                        Contacts
+                    </a>
                 </div>
             </div>
         </nav>
+        
         <!--Content-->
         <!-- About Section -->
         <section id="about" class="bg-gray-100 py-12 px-6">
             <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl font-roboto font-bold text-gray-800 text-center mb-6">About Simphiwe Guest House</h2>
-                <div class="grid md:grid-cols-2 gap-8 items-center">
-                    <!-- About Image -->
-                    <div>
+                <!-- Title -->
+                <h2 class="text-3xl font-roboto font-bold text-gray-800 text-center mb-6">
+                    About Simphiwe Guest House
+                </h2>
+                <div class="flex justify-between items-center gap-8">
+                    <!-- First Image -->
+                    <div class="w-1/2 transform transition duration-1000 ease-in-out hover:scale-105">
                         <img src="img/main_view.jpg" alt="Simphiwe Guest House" class="rounded-lg shadow-md w-full">
                     </div>
-                    <!-- About Text -->
-                    <div>
-                        <p class="text-gray-600 font-roboto leading-relaxed mb-4">
-                            Welcome to Simphiwe Guest House, a serene oasis where comfort meets elegance. Nestled in the heart of tranquility, 
-                            our guest house offers a perfect retreat for travelers seeking relaxation and exceptional service. 
-                        </p>
-                        <p class="text-gray-600 font-roboto leading-relaxed">
-                            Whether you're here for business or leisure, we take pride in providing a home away from home. 
-                            With our luxurious amenities and personalized hospitality, we ensure that your stay is truly unforgettable.
-                        </p>
+                    <!-- Second Image -->
+                    <div class="w-1/2 transform transition duration-1000 ease-in-out hover:scale-105">
+                        <img src="img/garden_view.jpg" alt="Guest House Landscape" class="rounded-lg shadow-md w-full">
                     </div>
                 </div>
+                <!-- Description -->
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600 font-roboto leading-relaxed mb-4">
+                        Welcome to Simphiwe Guest House, a serene oasis where comfort meets elegance. Nestled in the heart of tranquility, 
+                        our guest house offers a perfect retreat for travelers seeking relaxation and exceptional service. Whether you're here for business or leisure, we take pride in providing a home away from home. 
+                        With our luxurious amenities and personalized hospitality, we ensure that your stay is truly unforgettable.
+                    </p>
+                </div>
             </div>
-        </section>
+        </section>                        
+                   
         <!-- Services Section -->
         <section id="services" class="bg-white py-12 px-6">
             <div class="max-w-7xl mx-auto">
@@ -132,9 +154,9 @@
                 <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">Cancellation Policy</h2>
                 <div class="bg-white p-6 rounded-lg shadow-md text-center">
                     <p class="text-gray-600 font-roboto leading-relaxed">
-                        Free cancellation before <strong>Oct 31</strong>. Cancel before check-in on <strong>Nov 1</strong> for a partial refund. 
-                        Review this host's full policy for details.
-                    </p>
+                        There is a full refund of the deposit if cancellation is made a month before the booking date. 
+                        A partial deposit is paid if the cancellation is made 3 weeks before the booking date.
+                    </p>                    
                 </div>
             </div>
         </section>
@@ -225,9 +247,6 @@
                             <a href="https://instagram.com" target="_blank" aria-label="Instagram">
                                 <img src="img/instagram.png" alt="Instagram Icon" class="w-8 h-8">
                             </a>
-                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                                <img src="img/web.png" alt="LinkedIn Icon" class="w-8 h-8">
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -238,7 +257,6 @@
                 </div>
             </div>
         </footer>
-
         <script src="index.js"></script>
     </body>
 </html>
